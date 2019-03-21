@@ -41,10 +41,10 @@ class TelList():
                 for x in self.contact_list:
                     if name1 == x.name and num1 == x.num:
                         self.contact_list.remove(x)
-                        print("NAME", name1, "AND NUMBER", num1, "REMOVED WITH SUCCESS")
+                        print("NAME","(",name1,")","AND NUMBER","(", num1,")","REMOVED WITH SUCCESS!")
 
             if option > 4 or option < 1:
-                print("\n ERROR! Select a VALID Name ")
+                print("\n ERROR! Select a VALID Name!")
                 self.show()
 
             option = self.menu()
