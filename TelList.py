@@ -8,7 +8,7 @@ class TelList():
                            '\n [1]- TO ADD: ' +
                            '\n [2]- TO SHOW: ' +
                            '\n [3]- TO REMOVE: ' +
-                           '\n [4]- TO EXIT: '))
+                           '\n [4]- TO EXIT: \n :'))
 
     def show(self):
         for i in self.contact_list:
@@ -44,7 +44,7 @@ class TelList():
                         print("NAME","(",name1,")","AND NUMBER","(", num1,")","REMOVED WITH SUCCESS!")
 
             if option > 4 or option < 1:
-                print("\n ERROR! Select a VALID Name!")
+                print("\n ERROR! SELECT A VALID NUMBER!")
                 self.show()
 
             option = self.menu()
