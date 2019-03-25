@@ -27,7 +27,8 @@ class TelList():
                 num = input('\n TYPE A NUMBER TO ADD: ')
                 contato = Contact(name, num)
                 self.contact_list.append(contato)
-                print("NAME ", name, "NUMBER ", num, " ADD WITH SUCCESS")
+                print("NAME ", name.upper(), "NUMBER ", num, " ADD WITH SUCCESS")
+
 
             elif option == 2:
                 print("--FONE-LIST--")
@@ -45,7 +46,6 @@ class TelList():
 
             if option > 4 or option < 1:
                 print("\n ERROR! SELECT A VALID NUMBER!")
-                self.show()
 
             option = self.menu()
 
