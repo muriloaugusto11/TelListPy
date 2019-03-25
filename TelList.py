@@ -23,11 +23,11 @@ class TelList():
             if option == 1:
                 print("--ADD-LIST--")
                 print("")
-                name = input('\n TYPE A NAME TO ADD: ')
+                name = input('\n TYPE A NAME TO ADD: ').upper()
                 num = input('\n TYPE A NUMBER TO ADD: ')
                 contato = Contact(name, num)
                 self.contact_list.append(contato)
-                print("NAME ", name.upper(), "NUMBER ", num, " ADD WITH SUCCESS")
+                print("NAME", name, "NUMBER", num, "ADD WITH SUCCESS")
 
 
             elif option == 2:
@@ -36,13 +36,13 @@ class TelList():
 
             elif option == 3:
                 self.show()
-                name1 = input("\n NAME TO REMOVE: ")
+                name1 = input("\n NAME TO REMOVE: ").upper()
                 num1 = input("\n NUMBER TO REMOVE: ")
                 contato = Contact(name, num)
                 for x in self.contact_list:
                     if name1 == x.name and num1 == x.num:
                         self.contact_list.remove(x)
-                        print("NAME","(",name1,")","AND NUMBER","(", num1,")","REMOVED WITH SUCCESS!")
+                        print("NAME","(",name1,")","AND NUMBER","(",num1,")","REMOVED WITH SUCCESS!")
 
             if option > 4 or option < 1:
                 print("\n ERROR! SELECT A VALID NUMBER!")
