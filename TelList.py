@@ -62,14 +62,12 @@ TelList().execute()
 
 
 
-#while True:
-#    try:
-#        num = int(input("Digite seu número: "))
-#        if not 900000000 <= num <= 999999999:
-#            raise ValueError("Não é permitido número maior ou menor que 9 caracteres")
-#    except ValueError as e:
-#        print("Número de telefone só pode conter numeros.", e)
-#    else:
-#        break
-#
-#print(num)##
+while True:
+    try:
+        num = int(input("Digite seu número: "))
+        if not 900000000 <= num <= 999999999:
+            raise ValueError("Não é permitido número maior ou menor que 9 caracteres")
+    except ValueError as e:
+        print("Número de telefone só pode conter numeros.", e)
+    else:
+      print(num)
